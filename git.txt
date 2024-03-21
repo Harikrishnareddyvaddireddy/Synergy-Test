@@ -1,0 +1,14 @@
+git init
+git add .
+git  commit -m "Initial Commit"
+git  remote add origin https://github.com/j
+git  push -u origin master
+ 
+                      or
+
+git init
+git add .
+git  commit -m "Initial Commit"
+git  remote add origin https://github.com/j
+git  branch -m main
+git push -u origin main --force
