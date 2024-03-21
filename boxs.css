@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&family=Work+Sans&display=swap');
+
+  
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 10% 30px 10%;
+}
+.category {
+    text-decoration: none; /* Remove underline */
+    color: #1a2c79; /* Set text color to black */
+    font-weight: 800;
+    border-radius: 20px;
+    box-sizing: border-box;
+    width: calc(33.3333% - 20px); /* 20px is the total margin space between boxes */
+    margin: 10px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    border: 1px solid black; /* Add a 1px solid black border */
+    font-family:'Nunito';
+}
+.category:hover {
+    text-decoration:none; /* Add underline on hover */
+    color: #ffff;
+    background-color: #1a2c79; /* Set text color to blue on hover (change as needed) */
+  }
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .category {
+        width: calc(50% - 20px); /* Adjust width for smaller screens */
+    }
+    .heading{
+        padding: 10px 5% 10px 5%; /* 10px top and bottom, 5% left and right */
+        font-size: 20px;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .category {
+        width: calc(100% - 20px); /* Adjust width for even smaller screens */
+    }
+    .heading{
+        padding: 10px 5% 10px 5%; /* 10px top and bottom, 5% left and right */
+        font-size: 18px;
+    }
+}

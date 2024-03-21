@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Consultation Form</title>
+
+  <link rel="stylesheet" href="Form.css">
+</head>
+<style>
+  p {
+      color: #333;
+      cursor: pointer;
+  }
+
+  p:hover {
+      color: #87CEFA; /* Light blue color on hover */
+  }
+</style>
+<body>
+
+  <h1>Application Form</h1>
+
+  <form id="dataForm" action="https://api.web3forms.com/submit" method="post" >
+    <input type="hidden" name="access_key" value="78db0d6c-35ea-4f8a-bc6e-069a88237730">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <span id="nameError" class="error"></span>
+    <label for="number">Mobile Number:</label>
+    <input type="tel" id="number" name="number" pattern="[0-9]{10}" required>
+    <span id="numberError" class="error"></span>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <span id="emailError" class="error"></span>
+
+    <label for="profile">Industry:</label>
+    <input type="text" id="profile" name="profile" required>
+    <span id="profileError" class="error"></span>
+
+    <label for="skills">Key Skills:</label>
+    <input type="text" id="skills" name="skills" required>
+    <span id="skillsError" class="error"></span>
+    <label for="resume">Resume Attachment:</label>
+    <input class="text-input" type="url" id="resume-link" name="resume-link" required>
+    <p><a href="Termsandcondtions.html">I have read and agree to the Terms and Conditions.</a></p>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>

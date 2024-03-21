@@ -1,0 +1,103 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&family=Work+Sans&display=swap');
+
+/* Base styles */
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.contact-info,
+.contact-form {
+    flex: 1;
+    max-width: 400px;
+    margin: 10px;
+}
+
+.contact-info h2,
+.contact-form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #1a2c79;
+    font-family: 'Prata';
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.contact-info h3 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #1a2c79;
+    font-family: 'Prata';
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.contact-info li i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.contact-info a {
+    color: #1a2c79;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.contact-form input[type="submit"] {
+    color: #000;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #004080;
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+    .contact-info,
+    .contact-form {
+        flex: 1 0 100%; /* Change flex properties to make them stack */
+        max-width: none; /* Allow elements to take full width */
+        margin: 0; /* Remove margin */
+    }
+}

@@ -1,0 +1,307 @@
+.new-nav {
+    height: 70px; /* Changed height to accommodate logo */
+    width: 100%;
+    position: relative;
+  }
+  
+  .new-nav > .new-nav-header {
+    display: inline;
+  }
+  
+  .new-nav > .new-nav-header > .new-nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #000;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .new-nav-header .new-nav-title {
+    margin-left: 100px;
+  }
+  
+  .new-nav > .new-nav-btn {
+    display: none;
+  }
+  
+  .new-nav > .new-nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+    margin-right: 5%;
+  }
+  
+  .new-nav > .new-nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #000;
+  }
+  .new-nav > .new-nav-links > a:hover {
+    color: #ED7014;
+    background-color: #1a2c79;
+    border-radius: 15px; /* Applying border radius of 5px */
+  }
+  .new-nav > #new-nav-check {
+    display: none;
+  }
+  
+  @media (max-width: 600px) {
+    .new-nav > .new-nav-header {
+      width: 100%;
+      text-align: center; /* Center align header */
+    }
+  
+    .new-nav-header .new-nav-title {
+      margin-left: 0;
+    }
+  
+    .new-nav > .new-nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+  
+    .new-nav > .new-nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+  
+    .new-nav > .new-nav-btn > label:hover,
+    .new-nav #new-nav-check:checked ~ .new-nav-btn > label {
+      background-color: white;
+    }
+  
+    .new-nav > .new-nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid black;
+    }
+  
+    .new-nav > .new-nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: white;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 70px; /* Adjusted top position */
+      left: 0px;
+      text-align: center; /* Center align links */
+    }
+  
+    .new-nav > .new-nav-links > a {
+      display: block;
+      width: 100%;
+    }
+  
+    .new-nav > #new-nav-check:not(:checked) ~ .new-nav-links {
+      height: 0px;
+    }
+  
+    .new-nav > #new-nav-check:checked ~ .new-nav-links {
+      height: calc(100vh - 70px); /* Adjusted height */
+      overflow-y: auto;
+    }
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: #142161;
+    font-family:'Nunito';
+}
+.section_title_all h3 {
+    color: #142161;
+}
+.About-heading{
+    color: #142161;
+}
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    outline: none;
+    font-family:'Nunito';
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family:'Nunito';
+}
+
+.section_all {
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    min-height: 100vh;
+    font-family:'Nunito';
+}
+.section-title {
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.section-subtitle {
+    letter-spacing: 0.4px;
+    line-height: 28px;
+    max-width: 550px;
+}
+
+.section-title-border {
+    background-color: #000;
+    height: 1 3px;
+    width: 44px;
+}
+
+.section-title-border-white {
+    background-color: #fff;
+    height: 2px;
+    width: 100px;
+}
+.text_custom {
+    color: #142161;
+}
+
+.about_icon i {
+    font-size: 22px;
+    height: 65px;
+    width: 65px;
+    line-height: 65px;
+    display: inline-block;
+    background: #fff;
+    border-radius: 35px;
+    color: #142161;
+    box-shadow: 0 8px 20px -2px rgba(158, 152, 153, 0.5);
+}
+
+.about_header_main .about_heading {
+    max-width: 450px;
+    font-size: 24px;
+}
+
+.about_icon span {
+    position: relative;
+    top: -10px;
+}
+
+.about_content_box_all {
+    padding: 28px;
+}
+.text-muted > p{
+    font-size: 18px;
+    text-align: justify;
+    font-family:'Nunito';
+}
+.about_header_main > h4{
+    text-align: center;
+    padding: 10px;
+    font-family:'Nunito';
+}
+.About-heading h2{
+    text-align: center;
+    padding: 10px;
+    font-family:'Nunito';
+}
+.text{
+    text-align: justify;
+    font-family:'Nunito';
+}
+/* Update the media query for small screens */
+@media (max-width: 600px) {
+    .new-nav > .new-nav-header {
+      text-align: center; /* Center align header */
+    }
+  
+    .new-nav-header .new-nav-title {
+      margin-left: 0;
+    }
+  
+    .new-nav > .new-nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+  
+    .new-nav > .new-nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      margin-top: 20px;
+      background-color: white;
+      top: 50px; /* Adjusted top position */
+      left: 0;
+      text-align: center; /* Center align links */
+      z-index: 1000; /* Ensure the nav links are on top */
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add a box shadow for depth */
+      border-radius: 0 0 10px 10px; /* Rounded corners */
+    }
+  
+    .new-nav > .new-nav-links > a {
+      display: block;
+      padding: 10px 0; /* Adjusted padding */
+      text-decoration: none;
+      color: #000;
+      border-bottom: 1px solid #eee; /* Add a border between links */
+    }
+  
+    .new-nav > .new-nav-links > a:last-child {
+      border-bottom: none; /* Remove border from last link */
+    }
+  
+    .new-nav > #new-nav-check:checked ~ .new-nav-links {
+      height: auto; /* Auto height to fit content */
+      overflow-y: hidden; /* Hide scrollbar */
+    }
+}
+@media (max-width: 600px) {
+    .new-nav > .new-nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .new-nav > .new-nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .new-nav-header .new-nav-title {
+      margin-left: 10px;
+    }
+    .new-nav > .new-nav-btn > label:hover,
+    .new-nav #new-nav-check:checked ~ .new-nav-btn > label {
+      background-color: white; /* Set button color when hovered or checked */
+    }
+    .new-nav > .new-nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid black; /* Change border color to black */
+    }
+    .new-nav > .new-nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: white;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .new-nav > .new-nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .new-nav > #new-nav-check:not(:checked) ~ .new-nav-links {
+      height: 0px;
+    }
+    .new-nav > #new-nav-check:checked ~ .new-nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  } 

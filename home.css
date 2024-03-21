@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&family=Work+Sans&display=swap');
+#box1{
+    padding:7px 50px 7px 50px;
+  }
+  .mainbox{
+    background-color: #f8f9fa;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .star {
+    position: absolute;
+    left: -25px;
+    color:#1a2c79;
+    font-size: 20px;
+  }
+  
+  .get-matches-button {
+    padding: 20px 30px;
+    background-color: #1a2c79;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .get-matches-button:hover {
+    background-color:black;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 10px;
+    text-decoration: none;
+    color:white;
+  }
+ .row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 33px 33px; /* Adjust padding for smaller screens */
+
+}
+.about-col-1{
+    flex-basis:45% ;
+    padding-top: 20px;
+}
+.about-col-1 h2{
+    font-family: 'Prata';
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #1a2c79;
+}
+.about-col-1 h3{
+    font-size: 20px;
+    font-family: 'WorkSans', serif;
+    padding-bottom: 10px;
+    color: #1a2c79;
+}
+.about-col-1 p{
+    font-size: 18px;
+    padding-bottom: 10px;
+    font-family:'Nunito'; 
+    text-align: justify;
+}
+.about-col-2{
+    flex-basis: 45%;
+    padding-top: 30px;
+}
+.about-col-2 img{
+    width: 90%;
+    height: 90%;
+    border-radius: 20px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+/* Media query for adjusting the row layout */
+@media only screen and (max-width: 600px) {
+    #box1{
+        padding:7px 7px 7px 7px;
+      }
+    .row {
+        padding: 35px 35px; /* Adjust padding for smaller screens */
+    }
+}
+
+/* Media query for adjusting the about columns */
+@media only screen and (max-width: 600px) {
+    #box1{
+        padding:7px 7px 7px 7px;
+      }
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%; /* Make columns take full width on smaller screens */
+        padding-top: 20px; /* Adjust top padding */
+    }
+
+    .about-col-2 img {
+        padding-top: 20px;
+        width: 100%; /* Make image take full width on smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
