@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nav.css">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Template Stylesheet -->
+    <!--Footer-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styleFooter.css">
+</head>
+<style>
+    body{
+        background-color:#FAFAFB;
+    }
+    .service-item .bg-icon {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url(../img/bg-icon.png) center center no-repeat;
+        background-size: cover;
+    }
+    .container2{
+        padding: 10px 100px 10px 100px;
+    }
+    @media screen and (max-width: 600px) {
+        .container2 {
+            padding: 0; /* Remove padding for small screens */
+        }
+    }
+    /* Media query for small screens */
+    @media only screen and (max-width: 600px) {
+        #mainheding {
+            font-size: 20px; /* Adjust font size for better readability */
+        }
+        #subheading {
+            font-size: 16px; /* Adjust font size for better readability */
+        }
+    }
+    .services {
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    li {
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    li::before {
+    content: "\2605";
+    color: #0000;
+    margin-right: 10px;
+    font-size: 18px;
+    line-height: 1;
+}
+
+    
+</style>
+<body>
+    <div class="new-nav">
+        <input type="checkbox" id="new-nav-check">
+        <div class="new-nav-header">
+            <div class="new-nav-title">
+                <a href="#"><img style="width: 230px; height:60px;" src="img/Variation-Logo.png" alt=""></a>
+            </div>
+        </div>
+        <div class="new-nav-btn">
+          <label for="new-nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+              
+              <div class="new-nav-links">
+                  <a href="index.html">Home</a>
+                  <a href="about.html">About Us</a>
+                  <a href="consulant.html">Consultation</a>
+                  <a href="job.html">Jobs</a>
+                  <a href="services.html" > Employer</a>
+                  <a href="contact.html" >Contact Us</a>
+              </div>
+      </div>
+      <h2 id="mainheding" style="color:#142161;font-family:'Prata';text-align: center;">Accelerate Your Career With Our Experts</h2>
+      <h3 id="subheading" style="color:#ED7014;font-family:'Prata';text-align: center;">Synergy Recruitment offers a comprehensive pathway to career success</h3>
+    <!-- Service Start -->
+    <div class="services">        <ul>
+            <li>Beginning with our professional career consulting services designed to assist individuals in clarifying their career trajectory.</li>
+            <li>Continuing along this journey, we provide networking consulting services, enabling professionals to broaden their professional networks and access new opportunities.</li>
+            <li>Further enhancing this process, our specialized resume consulting services ensure that resumes effectively showcase skills and experiences.</li>
+            <li>Lastly, our interview preparation consulting services equip candidates with the confidence and expertise needed to excel in job interviews and secure coveted positions.</li>
+        </ul>
+    </div>
+    <div class="container-fluid bg-light my-5 py-6" id="service">
+        <div class="container2">
+            <div class="row g-4">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                        <div class="bg-icon flex-shrink-0 mb-3"> <a href="contact.html">
+                            <i class="fa fa-briefcase fa-2x text-dark"></i></a>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3" style="color: #142161;">Career Consulting</h4>
+                            <span>Let our experienced consultants provide personalized advice tailored to your unique goals and aspirations, including career planning, skill development, and job search strategies. </span>
+                            <br><br>
+                            <span>With career consulting service, you will gain clarity, confidence, and actionable steps toward achieving their professional objectives.</span><br><br>
+                            <h6 class="mb-3"> <a href="contact.html">Read More </a><span class="text-primary"></span></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                        <div class="bg-icon flex-shrink-0 mb-3"><a href="contact.html">
+                            <i class="fa fa-user fa-2x text-dark"></i></a>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3" style="color: #142161;">Network Consulting</h4>
+                            <span>Let our expert consultants offer personalized guidance on effective networking strategies, both online and offline, tailored to your individual career goals. </span> <br><br>
+                            <span>With networking consulting service, professionals can build valuable relationships and unlock new opportunities in their industries.</span><br><br>
+                            <h6 class="mb-3"> <a href="contact.html">Read More </a><span class="text-primary"></span></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                        <div class="bg-icon flex-shrink-0 mb-3"> <a href="contact.html">
+                            <i class="fa fa-file fa-2x text-dark"></i></a>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3" style="color: #142161;">Resume Enhancement</h4>
+                            <span>Let our expert consultants provide personalized guidance on formatting and content optimization. Empowering you to stand out to potential employers.</span><br><br>
+                            <span>With resume enhancement service, job seekers gain a competitive edge in the job market and increase their chances of securing their desired roles.</span><br><br>
+                            <h6 class="mb-3"> <a href="contact.html">Read More </a><span class="text-primary"></span></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                        <div class="bg-icon flex-shrink-0 mb-3"><a href="contact.html">
+                            <i class="fa fa-laptop-code fa-2x text-dark"></i> </a>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3" style="color: #142161;">Interview Preparation</h4>
+                            <span>Let our expert consultants provide personalized guidance on mastering interview techniques, handling challenging questions, and presenting oneself confidently.</span><br><br>
+                            <span>With interview preparation service, candidates can refine their skills, boost their confidence, and secure their desired positions effectively.</span> <br> <br>
+                            <h6 class="mb-3"> <a href="contact.html">Read More </a><span class="text-primary"></span></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="cta-text">
+                                <h4>Find us</h4>
+                                <span>Toronto Ontario Canada</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-phone"></i>
+                            <div class="cta-text">
+                                <h4>Call us</h4>
+                                <span>(416)826-1564</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="far fa-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <span>info@synergy-careers.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="img/Variation-Logo.png" class="img-fluid" alt="logo"></a>
+                            </div>
+                            <div class="footer-text">
+                                <p>In a world filled with opportunities, having a mentor can make all the difference. explore why people turn to this valuable resource to unlock their potential.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="consultant.html">Consultation</a></li>
+                                <li><a href="job.html">Jobs</a></li>
+                                <li><a href="services.html">Employer</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Follow us</h3>
+                            </div>
+                            <div class="footer-social-icon">
+                                <a href="https://www.linkedin.com/company/synergy-recruitment-inc/"><i class="fab fa-linkedin linkedin-bg"></i></a> 
+                                <!-- <a href="#"><i class="fab fa-twitter twitter-bg"></i></a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

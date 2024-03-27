@@ -26,15 +26,13 @@ img {
 /* SECTION - HOME */
 
 .home {
-  margin-top: 35px;
   display: grid;
-  background: url("img/homebg.PNG");
-  background-color: #8071a8;
+  /* background: url("img/homebg.PNG"); */
   grid-template-columns: 45% 50%;
   place-items: center;
   gap: 50px;
   overflow: hidden;
-  padding: 110px 60px;
+  padding: 20px 60px;
 }
 
 .description {

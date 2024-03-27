@@ -41,7 +41,6 @@ text-align: center;
 }
 .about-col-2{
     flex-basis: 45%;
-    padding-top: 50px;
 }
 .about-col-2 img{
     width: 90%;

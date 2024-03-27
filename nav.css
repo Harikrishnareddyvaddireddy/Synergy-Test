@@ -10,7 +10,7 @@ body {
   height: 70px; /* Changed height to accommodate logo */
   width: 100%;
   position: relative;
-  background:#fff;
+  background-color: #F8F9FA;
   padding-bottom: 100px;
 }
 
@@ -42,7 +42,7 @@ body {
 
 .new-nav > .new-nav-links > a {
   display: inline-block;
-  padding: 13px 10px 13px 10px;
+  padding: 13px 18px 13px 18px;
   text-decoration: none;
   color: #000;
 }
@@ -50,7 +50,7 @@ body {
 .new-nav > .new-nav-links > a:hover {
   color: #ED7014;
   background-color: #1a2c79;
-  border-radius: 15px; /* Applying border radius of 5px */
+  border-radius: 25px; /* Applying border radius of 5px */
 }
 
 
