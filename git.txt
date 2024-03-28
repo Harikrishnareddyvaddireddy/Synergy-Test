@@ -9,7 +9,7 @@ git  push -u origin master
 git init
 git add .
 git  commit -m "Initial Commit"
-git  remote add origin https://github.com/j
+git  remote add origin https://github.com/Harikrishnareddyvaddireddy/Synergy-Test
 git  branch -m main
 git push -u origin main --force
 
